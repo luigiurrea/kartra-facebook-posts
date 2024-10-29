@@ -4,7 +4,7 @@ const { Octokit } = require("@octokit/rest");  // GitHub API client
 exports.handler = async function(event, context) {
   const accessToken = 'EAAH31k9jTaEBOyZBZB6nQBo4xWrxuYaQPd1DzRpP3lJOm9XkZAhZBPzEaOB2hkJu4O8CbOCSjVQjocDFQQhjCpZAPEVUfVOuoduGUNyC23qXexTAeAYYZBZArktZBRIUwY3BEwZBFZA4dJS3r1Dg9VBHSDBDGpsOMo4Y4nNx8M3Rl8gJaMXP39PZANQU4bxSJo3CNelPZAYZCWxuF60tN3u82JJLcc30OpPLB7Hm4KPCsToPQkgZDZD'; // Replace with your Facebook API access token
   const facebookApiUrl = `https://graph.facebook.com/v17.0/{page-id}/posts?access_token=${accessToken}`;
-  const githubToken = 'YOUR_GITHUB_PERSONAL_ACCESS_TOKEN'; // Replace with a GitHub personal access token
+  const githubToken = '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'; // Replace with a GitHub personal access token
   const repo = 'luigiurrea/kartra-facebook-posts'; // Replace with your GitHub username and repository name
 
   try {
