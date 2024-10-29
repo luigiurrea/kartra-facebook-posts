@@ -4,7 +4,7 @@ const { Octokit } = require("@octokit/rest"); // GitHub API client
 exports.handler = async function(event, context) {
   // Use environment variables for sensitive data
   const accessToken = process.env.FACEBOOK_ACCESS_TOKEN;
-  const facebookApiUrl = `https://graph.facebook.com/v17.0/your-page-id/posts?access_token=${accessToken}`;
+  const facebookApiUrl = `https://graph.facebook.com/v17.0/257164774896525/posts?access_token=${accessToken}`;
   const githubToken = process.env.GITHUB_ACCESS_TOKEN;
   const repo = 'luigiurrea/kartra-facebook-posts';
 
