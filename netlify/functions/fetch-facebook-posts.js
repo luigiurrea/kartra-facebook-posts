@@ -1,4 +1,6 @@
-const fetch = require('node-fetch');  // Required for fetching from external APIs
+const fetch = (...args) =>
+  import('node-fetch').then(({ default: fetch }) => fetch(...args));
+  // Required for fetching from external APIs
 const { Octokit } = require("@octokit/rest");  // GitHub API client
 
 exports.handler = async function(event, context) {
