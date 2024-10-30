@@ -1,0 +1,10 @@
+{
+    "dependencies": {
+      "@octokit/rest": "^21.0.2",
+      "node-fetch": "^3.3.2"
+    },
+    "scripts": {
+      "build": "echo 'No build process needed'"
+    }
+  }
+  
