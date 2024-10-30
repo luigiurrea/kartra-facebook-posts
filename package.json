@@ -4,3 +4,8 @@
     "node-fetch": "^3.3.2"
   }
 }
+{
+  "scripts": {
+    "build": "echo 'No build process needed'" // For a static site with HTML/CSS/JS only
+  }
+}
