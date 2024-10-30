@@ -23,7 +23,7 @@ exports.handler = async function(event, context) {
     await octokit.repos.createOrUpdateFileContents({
       owner: 'luigiurrea',       // Replace with your GitHub username
       repo: 'kartra-facebook-posts',      // Replace with your GitHub repository name
-      path: 'facebook-posts.json',  // The file path to update in GitHub
+      path: 'package.json',  // The file path to update in GitHub
       message: 'Update Facebook posts', // Commit message
       content: content, // Base64 encoded content of updated file
       committer: {
