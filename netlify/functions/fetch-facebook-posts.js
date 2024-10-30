@@ -8,7 +8,7 @@ exports.handler = async function(event, context) {
   const facebookApiUrl = `https://graph.facebook.com/v17.0/{257164774896525
 }/posts?access_token=${accessToken}`;
   const githubToken = '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'; // Replace with a GitHub personal access token
-  const repo = 'luigiurrea/kartra-facebook-posts'; // Replace with your GitHub username and repository name
+  const repo = 'luigiurrea/kartra'; // Replace with your GitHub username and repository name
 
   try {
     // 1. Fetch Facebook posts
@@ -22,8 +22,8 @@ exports.handler = async function(event, context) {
     // 3. Commit the updated content to GitHub
     await octokit.repos.createOrUpdateFileContents({
       owner: 'luigiurrea',       // Replace with your GitHub username
-      repo: 'kartra-facebook-posts',      // Replace with your GitHub repository name
-      path: 'package.json',  // The file path to update in GitHub
+      repo: 'kartra',      // Replace with your GitHub repository name
+      path: 'posts.json',  // The file path to update in GitHub
       message: 'Update Facebook posts', // Commit message
       content: content, // Base64 encoded content of updated file
       committer: {
